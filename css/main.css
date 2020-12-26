@@ -12,6 +12,7 @@
 body {
   background-color: var(--preta);
   font-family: 'Times New Roman', Times, serif;
+  color: white;
 }
 
 header .container {
@@ -24,7 +25,7 @@ header .logo {
   color: var(--vermelho);
   font-family: 'Arial black', times;
   font-size: 40px;
-  margin-left: 5px;;
+  margin-left: 5px;
 }
 
 header nav a {
@@ -35,4 +36,52 @@ header nav a {
 
 header nav a:hover {
   color: #fff;
+}
+
+/* FILME PRINCIPAL */
+
+.filme-principal {
+  font-size: 16px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+    url('./../img/OLivrodeEli.jpg');
+
+  height: 400px;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.filme-principal .descricao {
+  margin-bottom: 50px;
+}
+
+.filme-principal .titulo {
+  margin-top: 15%;
+  margin-bottom: 10px;
+  font-size: 40px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: solid 1px black;
+  color: white;
+  margin-right: 15px;
+  padding: 15px 30px;
+  font-size: 12px;
+
+  cursor: pointer;
+  transition: .3s ease all;
+}
+
+.botao:hover {
+  background-color: white;
+  color: black;
+}
+
+.botao i {
+  margin: 8px;
 }
